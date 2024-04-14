@@ -1,17 +1,17 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+April 13, 2024
 
 ### Project Title
-Replace the Project Title
+Exploring New York City Housing and Vacancy Survey (NYCHVS) Data
 
 ### Description
-Describe what your project is about and what it does
+This project explores public-use data containing responses to a survey of housing units conducted in New York City every three years.
 
 ### Files used
-Include the files used
+Summary data downloaded from https://www.census.gov/data/datasets/2021/demo/nychvs/microdata.html:
+* allunits_puf_21.csv
+* occupied_puf_21.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+New York City Department of Housing Preservation & Development *(survey sponsor)*  
+United States Census Bureau *(data source)*
