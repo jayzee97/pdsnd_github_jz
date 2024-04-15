@@ -9,6 +9,8 @@ This project explores public-use data containing responses to a survey of housin
 
 Data from this survey can be used to characterize the attributes and condition of housing stock in the New York City area.  Comparisons can be made between boroughs on subjects such as vacancy rates, occupancy characteristics, rental rates, and the frequency of maintenance concerns.     
 
+The purpose of this project is to create borough-level summary tables showing the frequencies of undesirable conditions associated with poor maintenance or sub-standard housing.  Changes in these frequencies will be tracked over time using future survey results to see if housing conditions are improving or deteriorating.   
+
 ### Files used
 Public Use File User Guide and Codebook for 2021 Cycle: https://www2.census.gov/programs-surveys/nychvs/technical-documentation/record-layouts/2021/2021_NYCHVS_PUF_User_Guide_and_Codebook.pdf
 
