@@ -33,10 +33,12 @@ mold_stats = final.query("MOLD == 1").groupby('BORO')["MOLD"].count().reset_inde
 # Merging all summary tables together
 frames = [occupancy_stats, floor_stats, wall_stats, leak_stats, mold_stats]
 borough_issues = functools.reduce(lambda left, right: pd.merge(left, right, on='BORO'), frames)
-borough_issues['pct_floorholes'] = borough_issues['has_floorholes'] / borough_issues['occupied_units']
-borough_issues['pct_wallholes'] = borough_issues['has_wallholes'] / borough_issues['occupied_units']
-borough_issues['pct_leaks'] = borough_issues['has_leaks'] / borough_issues['occupied_units']
-borough_issues['pct_mold'] = borough_issues['has_mold'] / borough_issues['occupied_units']
+
+# Creating new variables containing percentage of units with each problem
+for x in ['floorholes', 'wallholes', 'leaks', 'mold']:
+    newvar = 'pct_' + x
+    sourcevar = 'has_' + x
+    borough_issues[newvar] = borough_issues[sourcevar] / borough_issues['occupied_units']
 
 # looking at results
 borough_issues.head(5)
