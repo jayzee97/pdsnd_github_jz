@@ -1,26 +1,14 @@
-<<<<<<< HEAD
-# Importing modules required to explore survey data
-||||||| 8ce79ab
-# Importing modules 
-=======
 #---------------------------#
 # Environment Preparation
 #---------------------------#
 # Importing modules 
->>>>>>> refactoring
 import pandas as pd
 import functools 
 
-<<<<<<< HEAD
-# Reading in public-use source data, downloaded from Census Bureau and saved in '~/udacity-git-course/pdsnd_github_jz'
-||||||| 8ce79ab
-# Reading in public-use source data, downloaded from Census Bureau
-=======
 #---------------------------#
 # Data Cleaning
 #---------------------------#
 # Reading in public-use source data, downloaded from Census Bureau
->>>>>>> refactoring
 allUnits = pd.read_csv(r'/Users/Jenny/udacity-git-course/pdsnd_github_jz/allunits_puf_21.csv')
 occUnits = pd.read_csv(r'/Users/Jenny/udacity-git-course/pdsnd_github_jz/occupied_puf_21.csv')
 
